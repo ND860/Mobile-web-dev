@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Noah Durling</h1>
+    </header>
+    <form action="#" method="post">
+        <fieldset>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" required/>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="tel">Phone Number</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 000-000-0000" required/>
+
+        </fieldset>
+        <fieldset>
+            <label for="address">Address</label>
+            <input type="address" name="address" id="address" required/>
+            <p>Yes or No</p>
+            <label for="yes">yes</label>
+            <input type="radio" id="yes" name="yn" value="yes">
+            <label for="no">no</label>
+            <input type="radio" id="no" name="yn" value="no">
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
