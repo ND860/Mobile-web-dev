@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Noah Durling</h1>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <form action="#" method="post">
+                    <label for="school">Name of School</label>
+                    <input type="text" name="school" id="school" required />
+                    <label for="join">Date of Joining</label>
+                    <input type="date" name="join" id="join" required />
+                    <p>Graduated</p>
+                    <label class="radio" for="yes">yes</label>
+                    <input class="radio" type="radio" id="yes" name="grad" value="yes">
+                    <label class="radio" for="no">no</label>
+                    <input class="radio" type="radio" id="no" name="grad" value="no">
+                </form>
+            </div>
+            <div class="swiper-slide">
+                <form action="#" method="post">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone" required pattern="^\d{3}-\d{3}-\d{4}$" />
+                    <label for="Zip">Zip code</label>
+                    <input type="text" name="Zip" id="Zip" required
+                        pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" />
+                </form>
+            </div>
+            <div class="swiper-slide">
+                <form id="form" action="#" method="post">
+                    <label for="cardNumber">Credit Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" required>
+                    <label for="expirationDate">Expiration Date</label>
+                    <input type="date" name="expirationDate" id="expirationDate" required />
+                    <label for="cvv">CVV</label>
+                    <input type="cvv" name="cvv" id="cvv" required />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+           
+
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+    <script src="js/valid.js"></script>
+</body>
